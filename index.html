@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Jorge A. Calvillo-Rodríguez</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 1rem;
+        }
+        h1 { margin: 0; color: #222; }
+        h2 { border-bottom: 1px solid #eee; padding-bottom: 0.5rem; color: #444; }
+        .container {
+            display: flex;
+            gap: 3rem;
+        }
+        .sidebar {
+            flex: 1;
+            text-align: center;
+        }
+        .sidebar img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        .main-content {
+            flex: 2.5;
+        }
+        .contact-links a {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #0366d6;
+            text-decoration: none;
+        }
+        .contact-links a:hover { text-decoration: underline; }
+        .publication {
+            margin-bottom: 1.5rem;
+        }
+        .pub-title { font-weight: bold; }
+        .pub-venue { font-style: italic; color: #555; }
+        
+        @media (max-width: 768px) {
+            .container { flex-direction: column; }
+            .sidebar { border-right: none; border-bottom: 1px solid #eee; padding-bottom: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Jorge A. Calvillo-Rodríguez</h1>
+        <p>Economist & Computer Scientist | Researcher in Automated Reinforcement Learning</p>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <!-- Sube una foto a tu repositorio llamada foto.jpg -->
+            <img src="foto.jpg" alt="Jorge Calvillo-Rodríguez">
+            
+            <h3>Contact</h3>
+            <div class="contact-links">
+                <a href="mailto:tu-correo@calvillo-rodriguez.dev">Email</a>
+                <a href="https://scholar.google.com/citations?user=TU_ID">Google Scholar</a>
+                <a href="https://github.com/donroboto">GitHub</a>
+                <a href="https://linkedin.com/in/tu-perfil">LinkedIn</a>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <h2>About Me</h2>
+            <p>I am a Professor at Tecnológico de Monterrey and a recent Ph.D. graduate in Computer Science and Engineering from the Universidad Nacional Autónoma de México (UNAM).</p>
+            <p>My research bridges computational economics, complex networks, and artificial intelligence. I specialize in designing scalable meta-optimization frameworks—such as Bayesian Swarm-Based Training and Closed-Loop Online Diagnostic-Aware AutoRL—for dynamic environments and continuous control tasks.</p>
+
+            <h2>Recent News</h2>
+            <ul>
+                <li><strong>[2026]</strong> Awarded First Place for Best Academic Paper at COMIA 2026 for research on cost-aware graph reinforcement learning for epidemic containment.</li>
+                <li><strong>[2026]</strong> Submitted our comprehensive survey on Population-Based Training to <em>Neural Computing and Applications</em>.</li>
+            </ul>
+
+            <h2>Selected Publications</h2>
+            
+            <div class="publication">
+                <div class="pub-title">A Comprehensive Survey of Population-Based Training for Hyperparameter Optimization</div>
+                <div>Jorge Calvillo-Rodríguez, et al.</div>
+                <div class="pub-venue">Neural Computing and Applications (2026)</div>
+            </div>
+
+            <div class="publication">
+                <div class="pub-title">Cost-Aware Graph Reinforcement Learning for Epidemic Containment</div>
+                <div>Jorge Calvillo-Rodríguez, et al.</div>
+                <div class="pub-venue">XVIII Congreso Mexicano de Inteligencia Artificial (COMIA 2026) - <strong>Best Paper Award</strong></div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
