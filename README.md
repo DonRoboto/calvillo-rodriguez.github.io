@@ -9,7 +9,7 @@ My research focuses on bridging the gap between computational economics, complex
 
 * **Automated Reinforcement Learning (AutoRL)**
 * **Population-Based Training & Meta-Optimization**
-* **Graph Neural Networks (GNNs) **
+* **Graph Neural Networks (GNNs)**
 * **Bayesian Optimization & Swarm Intelligence**
 * **Multi-Objective Optimization**
 
