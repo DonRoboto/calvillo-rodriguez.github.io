@@ -3,57 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-width=1.0">
-    <title>Jorge Calvillo-Rodríguez</title>
+    <!-- Librerías de íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    
     <style>
-        body {
+        .profile-sidebar {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
+            max-width: 280px;
             color: #333;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 2rem;
+            padding: 1rem;
         }
-        header {
-            text-align: center;
-            margin-bottom: 2rem;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 1rem;
-        }
-        h1 { margin: 0; color: #222; }
-        h2 { border-bottom: 1px solid #eee; padding-bottom: 0.5rem; color: #444; }
-        .container {
-            display: flex;
-            gap: 3rem;
-        }
-        .sidebar {
-            flex: 1;
-            text-align: center;
-        }
-        .sidebar img {
-            width: 100%;
-            max-width: 200px;
-            border-radius: 50%;
-            margin-bottom: 1rem;
-        }
-        .main-content {
-            flex: 2.5;
-        }
-        .contact-links a {
-            display: block;
+        .profile-sidebar h2 {
+            font-size: 1.4rem;
+            color: #444;
             margin-bottom: 0.5rem;
-            color: #0366d6;
-            text-decoration: none;
+            line-height: 1.2;
         }
-        .contact-links a:hover { text-decoration: underline; }
-        .publication {
+        .profile-sidebar .subtitle {
+            font-size: 0.95rem;
+            color: #555;
             margin-bottom: 1.5rem;
+            line-height: 1.4;
         }
-        .pub-title { font-weight: bold; }
-        .pub-venue { font-style: italic; color: #555; }
-        
-        @media (max-width: 768px) {
-            .container { flex-direction: column; }
-            .sidebar { border-right: none; border-bottom: 1px solid #eee; padding-bottom: 2rem; }
+        .profile-sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .profile-sidebar li {
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+            color: #444;
+            display: flex;
+            align-items: center;
+        }
+        /* Alineación y estilo de los íconos */
+        .profile-sidebar li i {
+            width: 24px;
+            text-align: center;
+            margin-right: 12px;
+            color: #333;
+            font-size: 1.1rem;
+        }
+        .profile-sidebar a {
+            color: #444;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+        .profile-sidebar a:hover {
+            color: #0366d6;
         }
     </style>
 </head>
@@ -64,21 +65,24 @@
         <p>Economist & Computer Scientist | Researcher in Automated Reinforcement Learning</p>
     </header>
 
-    <div class="container">
-        <div class="sidebar">
-            <!-- Sube una foto a tu repositorio llamada foto.jpg -->
-            <img src="foto.jpg" alt="Jorge Calvillo-Rodríguez">
-            
-            <h3>Contact</h3>
-            <div class="contact-links">
-                <a href="mailto:tu-correo@calvillo-rodriguez.dev">Email</a>
-                <a href="https://scholar.google.com/citations?user=TU_ID">Google Scholar</a>
-                <a href="https://github.com/donroboto">GitHub</a>
-                <a href="https://linkedin.com/in/tu-perfil">LinkedIn</a>
-            </div>
-        </div>
+    <div class="profile-sidebar">
+        <img src="foto.jpg" alt="Jorge Calvillo-Rodríguez">
+        
+        <h2>Jorge Alberto<br>Calvillo Rodríguez</h2>
+        <p class="subtitle">Researcher in Automated Reinforcement Learning (AutoRL)</p>
+        
+        <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Mexico City, Mexico</li>
+            <li><i class="fas fa-university"></i> Tecnológico de Monterrey / UNAM</li>
+            <li><a href="mailto:jorge@calvillo-rodriguez.dev"><i class="fas fa-envelope"></i> Email</a></li>
+            <li><a href="#"><i class="ai ai-researchgate"></i> ResearchGate</a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="#"><i class="ai ai-google-scholar"></i> Google Scholar</a></li>
+            <li><a href="#"><i class="ai ai-orcid"></i> ORCID</a></li>
+        </ul>
+    </div>
 
-        <div class="main-content">
+    <div class="main-content">
             <h2>About Me</h2>
             <p>I am a Lecturer at Tecnológico de Monterrey and a recent Ph.D. graduate in Computer Science and Engineering from the Universidad Nacional Autónoma de México (UNAM).</p>
             <p>My research bridges computational economics, complex networks, and artificial intelligence. I specialize in designing scalable meta-optimization frameworks—such as Bayesian Swarm-Based Training and Closed-Loop Online Diagnostic-Aware AutoRL—for dynamic environments and continuous control tasks.</p>
