@@ -3,28 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Jorge Calvillo-Rodríguez</title>
     <!-- Librerías de íconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     
     <style>
-        .profile-sidebar {
+        /* Estilos Globales */
+        body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            max-width: 280px;
+            color: #444;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        /* Barra de Navegación Superior */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%;
+            border-bottom: 1px solid #eaeaea;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .header-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #666;
+        }
+        .header-nav a {
+            margin-left: 1.5rem;
+            text-decoration: none;
+            color: #777;
+            font-size: 1rem;
+        }
+        .header-nav a:hover {
             color: #333;
-            padding: 1rem;
+        }
+
+        /* Contenedor Principal (Layout de 2 Columnas) */
+        .container {
+            display: flex;
+            max-width: 1100px;
+            margin: 3rem auto;
+            padding: 0 5%;
+            gap: 4rem;
+        }
+
+        /* Columna Izquierda: Perfil */
+        .profile-sidebar {
+            width: 240px;
+            flex-shrink: 0;
+        }
+        .profile-sidebar img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 1.5rem auto;
         }
         .profile-sidebar h2 {
-            font-size: 1.4rem;
-            color: #444;
+            font-size: 1.2rem;
+            color: #333;
             margin-bottom: 0.5rem;
             line-height: 1.2;
+            text-align: center;
         }
         .profile-sidebar .subtitle {
             font-size: 0.95rem;
             color: #555;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
             line-height: 1.4;
+            text-align: center;
         }
         .profile-sidebar ul {
             list-style: none;
@@ -38,12 +91,11 @@
             display: flex;
             align-items: center;
         }
-        /* Alineación y estilo de los íconos */
         .profile-sidebar li i {
             width: 24px;
             text-align: center;
             margin-right: 12px;
-            color: #333;
+            color: #222;
             font-size: 1.1rem;
         }
         .profile-sidebar a {
@@ -56,57 +108,101 @@
         .profile-sidebar a:hover {
             color: #0366d6;
         }
+
+        /* Columna Derecha: Contenido */
+        .main-content {
+            flex-grow: 1;
+        }
+        .main-content h2 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        .main-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+        .main-content ul {
+            padding-left: 1.5rem;
+            margin-bottom: 2.5rem;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+        .main-content a {
+            color: #4db8ff;
+            text-decoration: none;
+        }
+        .main-content a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Ajuste para móviles */
+        @media (max-width: 768px) {
+            .container { flex-direction: column; gap: 2rem; }
+            .profile-sidebar { width: 100%; text-align: center; }
+            header { flex-direction: column; gap: 1rem; text-align: center; }
+            .header-nav a { margin: 0 0.5rem; }
+        }
     </style>
 </head>
 <body>
 
+    <!-- Navegación Superior -->
     <header>
-        <h1>Jorge Calvillo-Rodríguez</h1>
-        <p>Economist & Computer Scientist | Researcher in Automated Reinforcement Learning</p>
+        <div class="header-name">Jorge Calvillo-Rodríguez</div>
+        <nav class="header-nav">
+            <a href="#">Projects</a>
+            <a href="#">Talks</a>
+            <a href="#">Teaching</a>
+            <a href="#">Awards</a>
+            <a href="#">CV</a>
+        </nav>
     </header>
 
-    <div class="profile-sidebar">
-        <img src="foto.jpg" alt="Jorge Calvillo-Rodríguez">
-        
-        <h2>Jorge Alberto<br>Calvillo Rodríguez</h2>
-        <p class="subtitle">Researcher in Automated Reinforcement Learning (AutoRL)</p>
-        
-        <ul>
-            <li><i class="fas fa-map-marker-alt"></i> Mexico City, Mexico</li>
-            <li><i class="fas fa-university"></i> Tecnológico de Monterrey / UNAM</li>
-            <li><a href="mailto:jorge@calvillo-rodriguez.dev"><i class="fas fa-envelope"></i> Email</a></li>
-            <li><a href="#"><i class="ai ai-researchgate"></i> ResearchGate</a></li>
-            <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-            <li><a href="#"><i class="ai ai-google-scholar"></i> Google Scholar</a></li>
-            <li><a href="#"><i class="ai ai-orcid"></i> ORCID</a></li>
-        </ul>
-    </div>
+    <div class="container">
+        <!-- Barra Lateral -->
+        <div class="profile-sidebar">
+            <img src="foto.jpg" alt="Jorge Calvillo-Rodríguez">
+            
+            <h2>Jorge Alberto<br>Calvillo Rodríguez</h2>
+            <p class="subtitle">Researcher in Automated Reinforcement Learning (AutoRL)</p>
+            
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> Mexico City, Mexico</li>
+                <li><i class="fas fa-university"></i> Tec de Monterrey / UNAM</li>
+                <li><a href="mailto:jorge@calvillo-rodriguez.dev"><i class="fas fa-envelope"></i> Email</a></li>
+                <li><a href="#"><i class="ai ai-researchgate"></i> ResearchGate</a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="#"><i class="ai ai-google-scholar"></i> Google Scholar</a></li>
+                <li><a href="#"><i class="ai ai-pubmed"></i> PubMed</a></li>
+                <li><a href="#"><i class="ai ai-orcid"></i> ORCID</a></li>
+            </ul>
+        </div>
 
-    <div class="main-content">
-            <h2>About Me</h2>
-            <p>I am a Lecturer at Tecnológico de Monterrey and a recent Ph.D. graduate in Computer Science and Engineering from the Universidad Nacional Autónoma de México (UNAM).</p>
-            <p>My research bridges computational economics, complex networks, and artificial intelligence. I specialize in designing scalable meta-optimization frameworks—such as Bayesian Swarm-Based Training and Closed-Loop Online Diagnostic-Aware AutoRL—for dynamic environments and continuous control tasks.</p>
+        <!-- Contenido Principal -->
+        <div class="main-content">
+            <h2>About me</h2>
+            <p>I am a Professor at Tecnológico de Monterrey and a recent Ph.D. graduate in Computer Science and Engineering from the Universidad Nacional Autónoma de México (UNAM). My work covers the design, analysis, and application of scalable meta-optimization frameworks.</p>
+            <p>My research bridges computational economics, complex networks, and artificial intelligence, specializing in algorithms for dynamic environments and continuous control tasks.</p>
+
+            <h2>Interests</h2>
+            <ul>
+                <li>Automated Reinforcement Learning (AutoRL)</li>
+                <li>Population-Based Training & Meta-Optimization</li>
+                <li>Multi-Objective Optimization</li>
+                <li>Graph Neural Networks & Network Containment</li>
+                <li>Swarm Intelligence & Bayesian Optimization</li>
+            </ul>
+
+            <h2>Publications</h2>
+            <p>A full list of publications with citation metrics is available on <a href="#">Google Scholar</a>.</p>
 
             <h2>Recent News</h2>
             <ul>
-                <li><strong>[2026]</strong> Awarded First Place for Best Academic Paper at COMIA 2026 for research on cost-aware graph reinforcement learning for epidemic containment.</li>
-                <li><strong>[2026]</strong> Submitted our comprehensive survey on Population-Based Training to <em>Neural Computing and Applications</em>.</li>
+                <li>Awarded First Place for Best Academic Paper at COMIA 2026 for research on cost-aware graph reinforcement learning.</li>
+                <li>Submitted our comprehensive survey on Population-Based Training to <em>Neural Computing and Applications</em>.</li>
             </ul>
-
-            <h2>Selected Publications</h2>
-            
-            <div class="publication">
-                <div class="pub-title">A Comprehensive Survey of Population-Based Training for Hyperparameter Optimization</div>
-                <div>Jorge Calvillo-Rodríguez, et al.</div>
-                <div class="pub-venue">Neural Computing and Applications (2026)</div>
-            </div>
-
-            <div class="publication">
-                <div class="pub-title">Cost-Aware Graph Reinforcement Learning for Epidemic Containment</div>
-                <div>Jorge Calvillo-Rodríguez, et al.</div>
-                <div class="pub-venue">XVIII Congreso Mexicano de Inteligencia Artificial (COMIA 2026) - <strong>Best Paper Award</strong></div>
-            </div>
-
         </div>
     </div>
 
