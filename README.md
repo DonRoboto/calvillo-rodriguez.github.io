@@ -5,7 +5,7 @@ Welcome to my academic portfolio. I am a Professor at Tecnológico de Monterrey 
 
 My research focuses on bridging the gap between computational economics, complex networks, and artificial intelligence, with a special emphasis on designing scalable meta-optimization frameworks for dynamic environments and continuous control tasks.
 
-## 🔬 Research Interests
+## Research Interests
 
 * **Automated Reinforcement Learning (AutoRL)**
 * **Population-Based Training & Meta-Optimization**
@@ -19,13 +19,13 @@ My research focuses on bridging the gap between computational economics, complex
 * **Latest Survey:** Authored *"A Comprehensive Survey of Population-Based Training for Hyperparameter Optimization"* (Neural Computing and Applications).
 * **Framework Development:** Designed and benchmarked novel meta-optimization algorithms, including Bayesian Swarm-Based Training and Closed-Loop Online Diagnostic-Aware AutoRL for MuJoCo environments.
 
-## 💻 Tech Stack & Tools
+## Tech Stack & Tools
 
 * **Deep Learning & RL:** PyTorch, PyTorch Geometric, Ray Tune, Ray RLlib, Stable-Baselines3, Gymnasium.
 * **Scientific Computing:** Python, NetworkX, Pandas, NumPy.
 * **Academic Publishing:** LaTeX.
 
-## 📫 Get in Touch
+## Get in Touch
 
 * **Website:** [calvillo-rodriguez.dev](https://calvillo-rodriguez.dev)
 * **Email:** [jorge@calvillo-rodriguez.dev]
