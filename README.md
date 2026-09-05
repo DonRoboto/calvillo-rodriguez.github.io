@@ -9,11 +9,11 @@ My research focuses on bridging the gap between computational economics, complex
 
 * **Automated Reinforcement Learning (AutoRL)**
 * **Population-Based Training & Meta-Optimization**
-* **Graph Neural Networks (GNNs) & Network Containment**
+* **Graph Neural Networks (GNNs) **
 * **Bayesian Optimization & Swarm Intelligence**
 * **Multi-Objective Optimization**
 
-## 🏆 Recent Highlights
+## Recent Highlights
 
 * **Award:** First Place for Best Academic Paper at the XVIII Congreso Mexicano de Inteligencia Artificial (COMIA 2026) for research on cost-aware graph reinforcement learning for epidemic containment.
 * **Latest Survey:** Authored *"A Comprehensive Survey of Population-Based Training for Hyperparameter Optimization"* (Neural Computing and Applications).
@@ -28,6 +28,6 @@ My research focuses on bridging the gap between computational economics, complex
 ## 📫 Get in Touch
 
 * **Website:** [calvillo-rodriguez.dev](https://calvillo-rodriguez.dev)
-* **Email:** [Tu correo profesional, ej. contacto@calvillo-rodriguez.dev]
+* **Email:** [jorge@calvillo-rodriguez.dev]
 * **LinkedIn:** [Enlace a tu perfil]
 * **Google Scholar:** [Enlace a tu perfil]
