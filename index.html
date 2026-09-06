@@ -16,6 +16,7 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            scroll-behavior: smooth; /* Animación suave al hacer clic en el menú */
         }
         
         /* Barra de Navegación Superior */
@@ -43,7 +44,7 @@
             color: #333;
         }
 
-        /* Contenedor Principal (Layout de 2 Columnas) */
+        /* Contenedor Principal */
         .container {
             display: flex;
             max-width: 1100px;
@@ -118,6 +119,8 @@
             color: #333;
             margin-top: 0;
             margin-bottom: 1rem;
+            border-bottom: 1px solid #eaeaea; /* Línea divisoria agregada para mejor estructura */
+            padding-bottom: 0.5rem;
         }
         .main-content p {
             margin-bottom: 1.5rem;
@@ -137,12 +140,45 @@
             text-decoration: underline;
         }
         
+        /* Estilos de la sección Teaching */
+        .teaching-institution h3 {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+        }
+        .course-item {
+            margin-bottom: 1.5rem;
+        }
+        .course-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.3rem;
+        }
+        .course-title {
+            font-size: 1.1rem;
+            color: #222;
+        }
+        .course-date {
+            font-style: italic;
+            color: #666;
+            font-size: 0.95rem;
+        }
+        .course-description {
+            margin: 0;
+            line-height: 1.6;
+            color: #444;
+            font-size: 1.05rem;
+        }
+
         /* Ajuste para móviles */
         @media (max-width: 768px) {
             .container { flex-direction: column; gap: 2rem; }
             .profile-sidebar { width: 100%; text-align: center; }
             header { flex-direction: column; gap: 1rem; text-align: center; }
             .header-nav a { margin: 0 0.5rem; }
+            .course-header { flex-direction: column; } /* Ajuste de fechas en móvil */
         }
     </style>
 </head>
@@ -154,7 +190,7 @@
         <nav class="header-nav">
             <a href="#">Projects</a>
             <a href="#">Talks</a>
-            <a href="#">Teaching</a>
+            <a href="#teaching">Teaching</a> <!-- Enlace funcional -->
             <a href="#">Awards</a>
             <a href="#">CV</a>
         </nav>
@@ -190,7 +226,7 @@
                 <li>Automated Reinforcement Learning (AutoRL)</li>
                 <li>Population-Based Training & Meta-Optimization</li>
                 <li>Multi-Objective Optimization</li>
-                <li>Graph Neural Networkst</li>
+                <li>Graph Neural Networks</li> <!-- Typo corregido -->
                 <li>Swarm Intelligence</li>
                 <li>Bayesian Optimization</li>
             </ul>
@@ -203,6 +239,47 @@
                 <li>Awarded First Place for Best Academic Paper at COMIA 2026 for research on cost-aware graph reinforcement learning.</li>
                 <li>Submitted our comprehensive survey on Population-Based Training to <em>Neural Computing and Applications</em>.</li>
             </ul>
+
+            <!-- Nueva Sección Teaching -->
+            <div id="teaching">
+                <h2>Teaching</h2>
+                <p>I am passionate about bridging the gap between computational economics and machine learning in the classroom, guiding students through theoretical foundations and practical implementations.</p>
+
+                <div class="teaching-institution">
+                    <h3>Tecnológico de Monterrey</h3>
+                    
+                    <div class="course-item">
+                        <div class="course-header">
+                            <span class="course-title"><strong>Data Mining</strong></span>
+                            <span class="course-date">Lecturer</span>
+                        </div>
+                        <p class="course-description">
+                            Focuses on data extraction, preprocessing, and predictive modeling. The curriculum covers applying algorithmic approaches to complex datasets and utilizing modern computing tools for analysis.
+                        </p>
+                    </div>
+
+                    <div class="course-item">
+                        <div class="course-header">
+                            <span class="course-title"><strong>Econometrics</strong></span>
+                            <span class="course-date">Lecturer</span>
+                        </div>
+                        <p class="course-description">
+                            Covers statistical methods for analyzing economic data, empirical modeling, and hypothesis testing to support strategic decision-making in dynamic environments.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="teaching-institution">
+                    <h3>Mentorship & Advising</h3>
+                    <div class="course-item">
+                        <p class="course-description">
+                            Active role as an academic advisor and instructor for university students. I provide guidance on academic development, research methodologies, and support for graduate program applications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin de la Sección Teaching -->
+
         </div>
     </div>
 
