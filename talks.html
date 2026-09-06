@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Teaching - Jorge Calvillo-Rodríguez</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <!-- Nota: En un proyecto real, es mejor poner todo el CSS en un archivo "style.css" y enlazarlo aquí -->
+    <style>
+        /* Copia aquí exactamente las mismas reglas <style> que tienes en tu index.html */
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #444; margin: 0; padding: 0; line-height: 1.6; }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 5%; border-bottom: 1px solid #eaeaea; max-width: 1100px; margin: 0 auto; }
+        .header-name { font-size: 1.2rem; font-weight: 700; color: #666; }
+        .header-nav a { margin-left: 1.5rem; text-decoration: none; color: #777; font-size: 1rem; }
+        .header-nav a:hover { color: #333; }
+        .container { display: flex; max-width: 1100px; margin: 3rem auto; padding: 0 5%; gap: 4rem; }
+        .profile-sidebar { width: 240px; flex-shrink: 0; }
+        .profile-sidebar img { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto 1.5rem auto; }
+        .profile-sidebar h2 { font-size: 1.2rem; color: #333; margin-bottom: 0.5rem; line-height: 1.2; text-align: center; }
+        .profile-sidebar .subtitle { font-size: 0.95rem; color: #555; margin-bottom: 2rem; line-height: 1.4; text-align: center; }
+        .profile-sidebar ul { list-style: none; padding: 0; margin: 0; }
+        .profile-sidebar li { margin-bottom: 0.8rem; font-size: 0.95rem; color: #444; display: flex; align-items: center; }
+        .profile-sidebar li i { width: 24px; text-align: center; margin-right: 12px; color: #222; font-size: 1.1rem; }
+        .profile-sidebar a { color: #444; text-decoration: none; display: flex; align-items: center; width: 100%; }
+        .profile-sidebar a:hover { color: #0366d6; }
+        .main-content { flex-grow: 1; }
+        .main-content h2 { font-size: 1.8rem; color: #333; margin-top: 0; margin-bottom: 1rem; border-bottom: 1px solid #eaeaea; padding-bottom: 0.5rem; }
+        .teaching-institution h3 { font-size: 1.2rem; color: #555; margin-bottom: 1rem; margin-top: 1.5rem; }
+        .course-item { margin-bottom: 1.5rem; }
+        .course-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.3rem; }
+        .course-title { font-size: 1.1rem; color: #222; }
+        .course-date { font-style: italic; color: #666; font-size: 0.95rem; }
+        .course-description { margin: 0; line-height: 1.6; color: #444; font-size: 1.05rem; }
+        @media (max-width: 768px) { .container { flex-direction: column; gap: 2rem; } .profile-sidebar { width: 100%; text-align: center; } header { flex-direction: column; gap: 1rem; text-align: center; } .header-nav a { margin: 0 0.5rem; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-name">Jorge Calvillo-Rodríguez</div>
+        <nav class="header-nav">
+            <a href="index.html">Home</a>
+            <a href="#">Projects</a>
+            <a href="#">Talks</a>
+            <a href="teaching.html" style="color: #333; font-weight: bold;">Teaching</a>
+            <a href="#">Awards</a>
+            <a href="#">CV</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- La barra lateral se mantiene idéntica -->
+        <div class="profile-sidebar">
+            <img src="foto.jpg" alt="Jorge Calvillo-Rodríguez">
+            <h2>Jorge<br>Calvillo Rodríguez</h2>
+            <p class="subtitle">Researcher in Automated Reinforcement Learning (AutoRL)</p>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> Mexico City, Mexico</li>
+                <li><i class="fas fa-university"></i> Tec de Monterrey / UNAM</li>
+                <li><a href="mailto:jorge@calvillo-rodriguez.dev"><i class="fas fa-envelope"></i> Email</a></li>
+                <li><a href="#"><i class="ai ai-researchgate"></i> ResearchGate</a></li>
+                <li><a href="https://www.linkedin.com/in/jorge-calvillo-rodr%C3%ADguez-1222ab88/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="#"><i class="ai ai-google-scholar"></i> Google Scholar</a></li>                
+                <li><a href="https://orcid.org/my-orcid?orcid=0009-0000-2811-4374"><i class="ai ai-orcid"></i> ORCID</a></li>
+            </ul>
+        </div>
+
+        <!-- El contenido principal ahora solo tiene la sección de docencia -->
+<div class="main-content">
+    <h2>Talks & Presentations</h2>
+    
+    <div class="course-item">
+        <div class="course-header">
+            <span class="course-title"><strong>Cost-Aware Graph Reinforcement Learning for Epidemic Containment</strong></span>
+            <span class="course-date">XVIII Congreso Mexicano de Inteligencia Artificial (COMIA)</span>
+        </div>
+        <p class="course-description">
+            Presented findings on optimizing containment strategies in complex networks using graph-based reinforcement learning.
+        </p>
+    </div>
+
+    <div class="course-item">
+        <div class="course-header">
+            <span class="course-title"><strong>Upcoming Workshop: Advancements in AutoRL</strong></span>
+            <span class="course-date">COMIA 2027 (Proposed)</span>
+        </div>
+        <p class="course-description">
+            Organizing an academic workshop focusing on the intersection of Population-Based Training and automated reinforcement learning methodologies.
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
