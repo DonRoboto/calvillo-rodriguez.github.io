@@ -1,4 +1,4 @@
-# Jorge Calvillo-Rodríguez, Ph.D.
+# Jorge Calvillo-Rodríguez.
 *Economist & Computer Scientist | Researcher in Automated Reinforcement Learning (AutoRL)*
 
 Welcome to my academic portfolio. I am a Professor at Tecnológico de Monterrey and a recent Ph.D. graduate in Computer Science and Engineering from the Universidad Nacional Autónoma de México (UNAM). 
